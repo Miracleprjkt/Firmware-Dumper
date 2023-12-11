@@ -46,7 +46,8 @@ jobs:
              cd dumper
              export PUSH_TO_GITLAB=true
              echo "www.gitlab.com" > .gitlab_instance
-             echo "MiracleDump" > .gitlab_group
+             echo "Miracleprjkt" > .gitlab_users
              echo "${{ secrets.GITLABTOKEN }}" > .gitlab_token
+             echo "${{ secrets.GITLABTOKENNAME }}" > .gitlab_token_name
              echo "${{ secrets.TGTOKEN }}" > .tg_token
              bash dumper.sh $LINK
